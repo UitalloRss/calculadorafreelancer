@@ -20,6 +20,7 @@ function calculaHoras(){
         valorHora = (valorTotalDoProjeto / (diasDeTrabalho * 4 * horasDiarias) ) + ( ( diasDeFerias * diasDeTrabalho * horasDiarias ) );
 
         resultado.innerHTML = `<p>Valor por hora do projeto: R$ ${valorHora.toFixed(2)} </p>`
+        clearElement(divContent);
     }
 }
 
