@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
     <link rel="stylesheet" href="./main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
+    <header>
+      <img src="img/he4rt_logo.png" alt="logo He4rt"> 
+      <p id="title">Calculadora Freelancer</p>
+    </header>
+    <section id="main">
+      <form>
+        <label class="freela">Tempo diário investido no projeto (em Horas)</label><br/>
+        <input type="text" id="horasDiarias" class="freela" size="15"><br/>
+        <label class="freela">Dias efetivos trabalhando</label><br/>
+        <input type="text" id="qtdDiasDeTrabalho" class="freela" size="15"><br/>
+        <label class="freela">Dias de Férias por projeto</label><br/>
+        <input type="text" id="diasDeFerias" class="freela" size="15"><br/>
+        <label class="freela">Valor total do Projeto</label><br/>
+        <input type="text" id="valorTotal" class="freela" size="15"><br/>
+        <input type="button" value="Calcular" id="btnCalcular" class="freela"><br/>
+      </form>
+
+      <div id="informacao">
+        <p>Essas quatro variáveis, vão definir um bom jeito de você cotar alguns de seus trabalhos até você começar a ter uma noção maior do que fazer nesses momentos.</p>
+      </div>
+    </section>
+    <div id=resultado>
     </div>
-    <script src="./main.js"></script>
+    <footer>
+      <p>&copy; Desenvolvido por Uítalo Souza</p>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
